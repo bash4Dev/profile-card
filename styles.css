@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+    padding: 1rem;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    padding: 2rem;
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+[data-testid='profilePicture'] {
+    border-radius: 50%;
+}
+
+.profile-content {
+    flex-grow: 1;
+}
+
+.header {
+    margin-bottom: 0.5rem;
+    padding-top: 0.8rem;
+}
+
+[data-testid='fullName'] {
+    color: #666;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+[data-testid='jobTitle'] {
+    color: #63abf7;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+[data-testid='shortBio'] {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.4;
+}
+
+.details {
+    margin-bottom: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+[data-testid='socialLinks'] {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+[data-testid='socialLinks'] a {
+    color: #63abf7;
+    transition: color 0.3s ease;
+    font-size: 1.4rem;
+}
+
+[data-testid='socialLinks'] a:hover {
+    color: #666;
+}
+
+[data-testid='currentTime'] {
+    background: #e8eaec;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 640px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail-item {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}

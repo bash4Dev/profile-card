@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="./my_image.png" alt="Profile Picture" data-testid="profilePicture">
+            </div>
+            <div data-testid="socialLinks">
+                <a href="#" data-testid="social-link-twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/bash4Dev" data-testid="social-link-github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bashir-umar-idris-555164261/" data-testid="social-link-linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="profile-content">
+            <div class="header">
+                <h1 data-testid="fullName">Bashir Umar Idris</h1>
+                <span data-testid="jobTitle">Web Developer</span>
+            </div>
+            <p data-testid="shortBio">I am a Front-end engineer with a strong passion for Web dev. I have completed courses from FreeCodeCamp and Coursera, mastering CSS, JQuery and JS. With hands-on experience building many projects, I keep enhancing my skills and updating my portfolio. I am currently exploring React.JS for my next project and I enjoy solving JS challenges on CodeSignal.</p>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-testid="currentLocation">Kano, Nigeria</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-envelope"></i>
+                    <span data-testid="emailAddress">idrisbashirumr@gmail.com</span>
+                </div>
+            </div>
+
+            <div data-testid="currentTime"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
